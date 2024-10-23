@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>postal.media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="postalmedia-ico.svg">
+
+    <style>
+        @import url("index.css")
+    </style>
+
+</head>
+
+<body>
+
+    <svg id="pathy" width="80vw" height="80vh" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <filter id='noiseFilter'>
+        </filter>
+
+        <path id="path">
+        </path>
+        <text font-size="5vw" font-family="monospace" fill='hsla(57, 69%, 95%, .3)'>
+            <textPath xlink:href="#path">postal.media
+            </textPath>
+        </text>
+
+    </svg>
+    <div id="horn"></div>
+    <div id="phot"></div>
+    <div id="nav">
+        <p id="footie"></p>
+        <p id="new">&#10227</p>
+        <p id="q"">?</p>
+        <p id="no">&#9633</p>
+
+    </div>
+</body>
+<script src="grainer.js"></script>
+<script src="rando-image.js"></script>
+<script src="nav.js"></script>
+
+</html>

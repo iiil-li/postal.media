@@ -1,0 +1,154 @@
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  display: block;
+}
+
+
+body::before,
+body::after {
+  background-image: url('postalmedia.svg');
+  background-size: 80vw;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: darken;
+  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: multiply;
+}
+
+body::before {
+  background: white;
+  filter: url(#noiseFilter);
+}
+#pathy {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+
+#horn {
+  position: fixed;
+  opacity: .1;
+  left: 0;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-image: url('postalmedia.svg');
+  background-size: 80vw;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  text-align: center;
+ 
+}
+
+#phot {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5; 
+  content: "";
+  width: 400%;
+  height: 400%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  text-align: center;
+  z-index: -4;
+  overflow:scroll;
+
+}
+
+#nav{
+  display: grid;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  opacity: .8;
+  z-index: 5;
+  font-size: 5vmax;
+  text-shadow: .2vw .2vw .2vw black;
+  align-items: center;
+  line-height: 5vmax;
+  column-gap: 0;
+}
+#footie {
+  opacity: 0;
+  grid-row-start:1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 2.5vmax;
+  text-align: center;
+  z-index: 0;
+
+}
+
+#new{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+#q{
+ grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  cursor: pointer;
+
+}
+#q:hover {
+  text-shadow: .2vw .2vw .5vw black;
+}
+#no{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  cursor: pointer;
+
+}
+#no:hover{
+  text-shadow: .2vw .2vw .5vw black;
+
+}
+
+
+
+
+a:link {
+  color: black;
+  text-shadow: .2vw .2vw .2vw whitesmoke;
+  background-color: beige;
+}
+a:active{
+  color: whitesmoke;
+  text-shadow: .2vw .2vw .2vw black;
+
+  background-color: wheat;
+}
+
