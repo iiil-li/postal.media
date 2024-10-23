@@ -15,7 +15,7 @@ const m4d = "https://api.postal.media/api/marked4dels";
 let collections = [
   npmScrapes,
   pmScrapes,
-  iaScrapes,
+//  iaScrapes,
   bnfScrapes,
   ddbScrapes,
   eurScrapes,
